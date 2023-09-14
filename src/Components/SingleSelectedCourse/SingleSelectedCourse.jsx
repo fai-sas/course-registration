@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types'
-const SingleSelectedCourse = ({ selectCourse, courseCredit }) => {
+const SingleSelectedCourse = ({ selectCourse, courseCredit, totalPrice }) => {
   return (
     <div className='card bg-base-100 shadow-xl'>
       <div className='card-body'>
@@ -18,7 +18,7 @@ const SingleSelectedCourse = ({ selectCourse, courseCredit }) => {
         <hr />
         <h2 className='card-title'>Total Credit Hour : {courseCredit}</h2>
         <hr />
-        <h2 className='card-title'>Total Price : 0 USD</h2>
+        <h2 className='card-title'>Total Price : {totalPrice} USD</h2>
       </div>
     </div>
   )
@@ -26,5 +26,6 @@ const SingleSelectedCourse = ({ selectCourse, courseCredit }) => {
 SingleSelectedCourse.propTypes = {
   selectCourse: PropTypes.object.isRequired,
   courseCredit: PropTypes.number.isRequired,
+  totalPrice: PropTypes.number.isRequired,
 }
 export default SingleSelectedCourse
