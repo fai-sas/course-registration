@@ -12,11 +12,13 @@ const Cards = () => {
   }, [])
 
   return (
-    <section className='my-8 grid grid-cols-3 gap-4'>
-      {cards.map((card) => {
-        return <Card card={card} key={card.id}></Card>
-      })}
-    </section>
+    <main className='col-span-5'>
+      <section className='my-8 grid md:grid-cols-2 lg:grid-cols-3 gap-4'>
+        {cards.map((card) => {
+          return <Card card={card} key={card.id}></Card>
+        })}
+      </section>
+    </main>
   )
 }
 Cards.propTypes = {}

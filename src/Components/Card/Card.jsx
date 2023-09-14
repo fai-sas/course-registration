@@ -6,13 +6,13 @@ const Card = ({ card }) => {
   const { image, title, description, price, credit, text } = card
 
   return (
-    <div className='card  bg-base-100 shadow-xl'>
+    <div className='card bg-base-100 shadow-xl'>
       <figure className='px-10 pt-10'>
         <img src={image} alt={title} className='rounded-xl' />
       </figure>
       <div className='card-body items-center text-center'>
         <h2 className='card-title'>{title}</h2>
-        <p>{description}</p>
+        <p className='text-justify p-0 m-0'>{description}</p>
 
         <article className='flex gap-4 items-center'>
           <div className='flex gap-2  items-center'>
@@ -30,7 +30,9 @@ const Card = ({ card }) => {
         </article>
 
         <div className='card-actions'>
-          <button className='btn w-full btn-primary'>{text}</button>
+          <button className='btn block w-full bg-[#2F80ED] text-white'>
+            {text}
+          </button>
         </div>
       </div>
     </div>
