@@ -12,7 +12,7 @@ const Cards = ({ handleSelect }) => {
   }, [])
 
   return (
-    <main className='col-span-5'>
+    <main className='lg:col-span-5'>
       <section className='my-8 grid md:grid-cols-2 lg:grid-cols-3 gap-4'>
         {cards.map((card) => {
           return (

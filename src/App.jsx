@@ -40,7 +40,7 @@ function App() {
       <h1 className='py-8 text-4xl font-bold text-center'>
         Course Registration
       </h1>
-      <article className='grid gap-4 grid-cols-1 lg:grid-cols-7'>
+      <article className='grid gap-8 grid-cols-1 lg:grid-cols-7'>
         <Cards handleSelect={handleSelect} />
         <SelectedCourses
           selectCourse={selectCourse}

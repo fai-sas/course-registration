@@ -8,35 +8,35 @@ const Card = ({ card, handleSelect }) => {
   return (
     <div className='card bg-base-100 shadow-xl'>
       <figure className='px-10 pt-10'>
-        <img src={image} alt={title} className='rounded-xl' />
+        <img src={image} alt={title} className='rounded-xl ]' />
       </figure>
-      <div className='card-body items-center text-center'>
-        <h2 className='card-title'>{title}</h2>
-        <p className='text-justify p-0 m-0'>{description}</p>
+      <div className='card-body pt-4 items-center text-center'>
+        <h2 className='card-title  text-lg'>{title}</h2>
+        <p className='text-justify text-sm leading-normal text-[#1c1b1b99] p-0 m-0'>
+          {description}
+        </p>
 
-        <article className='flex gap-4 items-center'>
+        <article className='flex py-2 gap-4 justify-between items-center'>
           <div className='flex gap-2  items-center'>
             <PiCurrencyDollarLight />
-            <h1>
-              Price: <span>{price}</span>{' '}
+            <h1 className=' text-base text-[#1c1b1b99]'>
+              Price : <span>{price}</span>{' '}
             </h1>
           </div>
           <div className='flex gap-2  items-center'>
             <PiBookOpenThin />
-            <h1>
-              Credit: <span>{credit}</span>hr
+            <h1 className=' text-base text-[#1c1b1b99]'>
+              Credit : <span>{credit}</span>hr
             </h1>
           </div>
         </article>
 
-        <div className='card-actions'>
-          <button
-            onClick={() => handleSelect(card)}
-            className='btn block w-full bg-[#2F80ED] text-white'
-          >
-            {text}
-          </button>
-        </div>
+        <button
+          onClick={() => handleSelect(card)}
+          className='btn capitalize w-full text-lg font-semibold hover:bg-[#2566bd] bg-[#2F80ED] text-white'
+        >
+          {text}
+        </button>
       </div>
     </div>
   )
