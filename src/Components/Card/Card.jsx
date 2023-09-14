@@ -2,7 +2,7 @@ import PropTypes from 'prop-types'
 import { PiCurrencyDollarLight } from 'react-icons/pi'
 import { PiBookOpenThin } from 'react-icons/pi'
 
-const Card = ({ card }) => {
+const Card = ({ card, handleSelect }) => {
   const { image, title, description, price, credit, text } = card
 
   return (
@@ -30,7 +30,10 @@ const Card = ({ card }) => {
         </article>
 
         <div className='card-actions'>
-          <button className='btn block w-full bg-[#2F80ED] text-white'>
+          <button
+            onClick={() => handleSelect(card)}
+            className='btn block w-full bg-[#2F80ED] text-white'
+          >
             {text}
           </button>
         </div>
@@ -40,5 +43,6 @@ const Card = ({ card }) => {
 }
 Card.propTypes = {
   card: PropTypes.array.isRequired,
+  handleSelect: PropTypes.func.isRequired,
 }
 export default Card
