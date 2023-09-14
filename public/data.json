@@ -1,0 +1,83 @@
+[
+  {
+    "id": 1,
+    "image": "https://ibb.co/qY8qTnv",
+    "title": "Introduction to C Programming",
+    "description": "Learn the fundamentals of C programming, a cornerstone of computer science. Master syntax, data types, and problem-solving.",
+    "price": 15000,
+    "credit": 1,
+    "text": "select"
+  },
+  {
+    "id": 2,
+    "image": "https://ibb.co/0ccBggj",
+    "title": "Introduction to Algorithms",
+    "description": "Delve into the world of algorithms. Understand sorting, searching, and algorithmic problem-solving techniques.",
+    "price": 25000,
+    "credit": 2,
+    "text": "select"
+  },
+  {
+    "id": 3,
+    "image": "https://ibb.co/ZxsVgxH",
+    "title": "Introduction to C++ for DSA",
+    "description": "Discover C++ for data structures and algorithms. Learn object-oriented programming with practical applications.",
+    "price": 10000,
+    "credit": 10,
+    "text": "select"
+  },
+  {
+    "id": 4,
+    "image": "https://ibb.co/n31YczK",
+    "title": "Basic Data Structures",
+    "description": "Build a strong foundation in data structures. Explore arrays, linked lists, stacks, and queues for efficient coding.",
+    "price": 35000,
+    "credit": 5,
+    "text": "select"
+  },
+  {
+    "id": 5,
+    "image": "https://ibb.co/C1n3Byj",
+    "title": "Introduction to OOP Python",
+    "description": "Dive into Python's object-oriented programming. Create reusable code and develop practical Python applications.",
+    "price": 19000,
+    "credit": 5,
+    "text": "select"
+  },
+  {
+    "id": 6,
+    "image": "https://ibb.co/hR9zpf6",
+    "title": "Software Engineering",
+    "description": "Explore the principles of software engineering. Learn design patterns, development methodologies, and project management.",
+    "price": 23000,
+    "credit": 2,
+    "text": "select"
+  },
+  {
+    "id": 7,
+    "image": "https://ibb.co/Ph31BQn",
+    "title": "AWS, Cloud Computing",
+    "description": "Master AWS and cloud computing. Deploy scalable applications, manage resources, and optimize cloud infrastructure.",
+    "price": 35000,
+    "credit": 2,
+    "text": "select"
+  },
+  {
+    "id": 8,
+    "image": "https://ibb.co/TrpTFPL",
+    "title": "Database (MySQL)",
+    "description": "Gain expertise in MySQL databases. Design schemas, query data, and ensure data integrity for web and app development.",
+    "price": 19000,
+    "credit": 4,
+    "text": "select"
+  },
+  {
+    "id": 9,
+    "image": "https://ibb.co/X8t77vR",
+    "title": "Problem-Solving Part",
+    "description": "Hone your problem-solving skills. Tackle coding challenges, algorithms, and data structures to excel in programming.",
+    "price": 23000,
+    "credit": 2,
+    "text": "select"
+  }
+]
