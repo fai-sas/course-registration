@@ -1,4 +1,4 @@
-#Three Project features:
+#Project features:
 
 • Courses can not be selected multiple times
 
