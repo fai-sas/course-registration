@@ -35,16 +35,19 @@ function App() {
       const remaining = 20 - credit
 
       if (credit > 20) {
-        return toast.warning('Sorry! Not Enough Credit', {
-          position: 'top-center',
-          autoClose: 5000,
-          hideProgressBar: false,
-          closeOnClick: true,
-          pauseOnHover: true,
-          draggable: true,
-          progress: undefined,
-          theme: 'dark',
-        })
+        return toast.warning(
+          'Sorry! Not Enough Credit, Your Credit Limit is 20!',
+          {
+            position: 'top-center',
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: 'dark',
+          }
+        )
       } else {
         setSelectCourse([...selectCourse, course])
         setCourseCredit(credit)

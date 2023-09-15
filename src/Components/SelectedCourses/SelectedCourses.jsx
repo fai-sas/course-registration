@@ -7,7 +7,7 @@ const SelectedCourses = ({
   remainingCredit,
 }) => {
   return (
-    <main className='lg:col-span-2  my-8'>
+    <main className='my-8 lg:col-span-2'>
       <SingleSelectedCourse
         selectCourse={selectCourse}
         courseCredit={courseCredit}
