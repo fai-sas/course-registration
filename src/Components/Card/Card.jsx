@@ -42,7 +42,7 @@ const Card = ({ card, handleSelect }) => {
   )
 }
 Card.propTypes = {
-  card: PropTypes.array.isRequired,
+  card: PropTypes.object.isRequired,
   handleSelect: PropTypes.func.isRequired,
 }
 export default Card

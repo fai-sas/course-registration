@@ -35,7 +35,7 @@ const SingleSelectedCourse = ({
   )
 }
 SingleSelectedCourse.propTypes = {
-  selectCourse: PropTypes.object.isRequired,
+  selectCourse: PropTypes.array.isRequired,
   courseCredit: PropTypes.number.isRequired,
   totalPrice: PropTypes.number.isRequired,
   remainingCredit: PropTypes.number.isRequired,
