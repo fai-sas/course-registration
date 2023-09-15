@@ -6,22 +6,25 @@ const SingleSelectedCourse = ({
   remainingCredit,
 }) => {
   return (
-    <div className='card mx-auto bg-base-100 shadow-xl'>
+    <div className='mx-auto shadow-xl card bg-base-100'>
       <div className='card-body'>
         <h2 className='card-title font-bold text-lg text-[#2F80ED]'>
           Credit Hour Remaining {remainingCredit} hr
         </h2>
         <hr />
-        <h3 className='card-title text-xl font-bold'>Course Name</h3>
+        <h3 className='text-xl font-bold card-title'>Course Name</h3>
+
         {selectCourse.map((item, index) => {
           return (
-            <ol className='list-decimal list-inside  pt-2' key={index}>
-              <li className='text-base leading-7 text-[#1c1b1b99]'>
-                {item.title}
-              </li>
-            </ol>
+            <li
+              key={index}
+              className=' list-decimal list-inside text-base leading-7 text-[#1c1b1b99]'
+            >
+              {item.title}
+            </li>
           )
         })}
+
         <hr className='mt-2' />
         <h2 className=' py-2  card-title font-medium text-base text-[#1c1b1b99]'>
           Total Credit Hour : {courseCredit}
